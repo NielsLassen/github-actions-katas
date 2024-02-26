@@ -1,1 +1,9 @@
 name: Reusable workflow
+on:
+  workflow_call:
+    inputs:
+      who-to-greet:
+        description: 'Greeting to ...'
+        default: 'World'
+        required: false
+        type: string
